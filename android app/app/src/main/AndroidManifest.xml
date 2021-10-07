@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.potholedetection">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name1"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Main2Activity"
+            android:theme="@style/AppTheme.Dark">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Signup"
+            android:label="@string/app_name1"/>
+        <activity android:name=".LoginSignup"
+            android:label="@string/app_name1"/>
+        <activity android:name=".MainActivity"
+            android:label="@string/app_name1">
+        </activity>
+        <activity android:name=".Reportpothole" />
+        <activity android:name=".sideview1"
+            android:label="@string/app_name1"/>
+        <activity android:name=".disclaimer"
+            android:label="@string/app_name1"/>
+        <activity android:name=".serverupload"
+            android:label="@string/app_name1"/>
+        <activity android:name=".choice"
+            android:label="@string/app_name1"/>
+        <activity android:name=".edittopimage"
+            android:label="@string/app_name1"/>
+        <activity android:name=".editsideimage"
+            android:label="@string/app_name1"/>
+        <activity android:name=".dimensions"
+            android:label="@string/app_name1"/>
+        <activity android:name=".issue"
+            android:label="@string/app_name1"/>
+        <activity android:name=".gallerypage"
+            android:label="@string/app_name1"/>
+        <activity android:name=".shoe_size"
+            android:label="@string/app_name1"/>
+        <activity android:name=".showdimensions"
+            android:label="@string/app_name1"/>
+        <activity
+            android:name=".CurrentLocation"
+            android:label="SafeRoads"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+    </application>
+
+</manifest>
